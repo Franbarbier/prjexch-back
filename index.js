@@ -74,7 +74,7 @@ app.get('/', (req, res) => {
 })
 
 const CONNECTION_URL = 'mongodb+srv://prj:prjexchangers123@prj-exchangers.dkon2qb.mongodb.net/?retryWrites=true&w=majority'
-const PORT = process.env.PORT || 5001
+const PORT = process.env.PORT || 5000
 
 
 
