@@ -13,8 +13,8 @@ import usersRoutes from './routes/users.js';
 
 // import { verifyToken } from './auth.js';
 
-const app = express()
 
+const app = express()
 
 process.env.TZ = "America/Argentina/Buenos_Aires";
 
