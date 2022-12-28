@@ -41,9 +41,9 @@ const multerVar = new multer({
   storage: multer.memoryStorage(),
 });
 // Display a form for uploading files.
-app.get('/', (req, res) => {
-  res.render('form.pug');
-});
+// app.get('/', (req, res) => {
+//   res.render('form.pug');
+// });
 
 app.post('/upload-icon', multerVar.single('file'), (req, res, next) => {
   if (!req.file) {
@@ -74,7 +74,7 @@ app.get('/', (req, res) => {
 })
 
 const CONNECTION_URL = 'mongodb+srv://prj:prjexchangers123@prj-exchangers.dkon2qb.mongodb.net/?retryWrites=true&w=majority'
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5001
 
 
 
