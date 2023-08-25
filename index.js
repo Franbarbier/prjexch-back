@@ -10,7 +10,7 @@ import plataformasRoutes from './routes/plataformas.js';
 import faqsRoutes from './routes/faqs.js';
 import wppsRoutes from './routes/wpps.js';
 import usersRoutes from './routes/users.js';
-
+import queryRoutes from './routes/query.js';
 // import { verifyToken } from './auth.js';
 
 
@@ -28,7 +28,7 @@ app.use('/plataformas', plataformasRoutes)
 app.use('/faqs', faqsRoutes)
 app.use('/users', usersRoutes)
 app.use('/wpps', wppsRoutes)
-
+app.use('/query', queryRoutes)
 
 const gc = new Storage({
   keyFilename: "pivotal-leaf-190722-1453958d93f5.json",
@@ -70,7 +70,7 @@ app.post('/upload-icon', multerVar.single('file'), (req, res, next) => {
 
 app.get('/', (req, res) => {
     res.set('Access-Control-Allow-Origin', '*');
-    res.send({ "msg": "This has CORS enabled 🎈" })
+    res.send({ "msg": "This has CORS enabled 🎈 tuqui" })
 })
 
 const CONNECTION_URL = 'mongodb+srv://prj:prjexchangers123@prj-exchangers.dkon2qb.mongodb.net/?retryWrites=true&w=majority'
